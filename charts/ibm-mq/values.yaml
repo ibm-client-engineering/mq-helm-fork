@@ -121,6 +121,12 @@ pki:
   keys: []
   trust: []
 
+uniformCluster:
+  enable: false
+  name: uniform-cluster
+  configFiles: []
+
+
 # livenessProbe section specifies setting for the MQ liveness probe, which checks for a running Queue Manager
 livenessProbe:
   # initialDelaySeconds should be raised if your system cannot start the Queue Manager in 60 seconds

@@ -170,6 +170,7 @@ spec:
       {{- end }}
       {{- end }}
       {{- range $index, $source := .Values.queueManager.mqscConfigMaps }}
+      # Need to add some code here to enable the config maps for uniform clusters... once we write it
       {{- if $source.items }}
       - name: mqsc-cm-{{ $source.name }}
         configMap:
